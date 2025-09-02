@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Brito - Desenvolvedora Web</title>
+    <style>
+        /* Paleta de cores roxa */
+        :root {
+            --roxo-claro: #9b59b6;
+            --roxo-escuro: #6c3483;
+            --roxo-fundo: #f5f0fa;
+            --branco: #ffffff;
+            --cinza: #f0f0f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--roxo-fundo);
+            color: var(--roxo-escuro);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--roxo-escuro);
+        }
+
+        header {
+            background-color: var(--roxo-claro);
+            padding: 20px 0;
+            text-align: center;
+            color: var(--branco);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--cinza);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--roxo-claro);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sobre, .servicos, .projetos, .depoimentos, .contato {
+            background-color: var(--branco);
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .servicos ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .servicos li {
+            background-color: var(--roxo-claro);
+            color: var(--branco);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .projetos .projeto-item {
+            margin-bottom: 20px;
+        }
+
+        .projetos .projeto-item a {
+            color: var(--roxo-escuro);
+            font-weight: bold;
+        }
+
+        .contato form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contato input, .contato textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contato button {
+            background-color: var(--roxo-claro);
+            color: var(--branco);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contato button:hover {
+            background-color: var(--roxo-escuro);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--roxo-claro);
+            color: var(--branco);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jennifer Brito</h1>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="sobre" class="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou Jennifer Brito, desenvolvedora web formada em Análise e Desenvolvimento de Sistemas. Atuo como especialista em WordPress, criando sites modernos e funcionais, sempre focando na melhor experiência para o usuário.</p>
+</section>
+
+<section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+        <li>Desenvolvimento de sites WordPress</li>
+        <li>Customização de temas</li>
+        <li>Otimização e performance</li>
+        <li>Suporte e manutenção de sites</li>
+    </ul>
+</section>
+
+<section id="projetos" class="projetos">
+    <h2>Projetos</h2>
+    <div class="projeto-item">
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto ou link para visualização. <a href="#">Ver Projeto</a></p>
+    </div>
+    <div class="projeto-item">
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto ou link para visualização. <a href="#">Ver Projeto</a></p>
+    </div>
+    <!-- Adicione mais projetos conforme necessário -->
+</section>
+
+<section id="depoimentos" class="depoimentos">
+    <h2>Depoimentos</h2>
+    <p>Espaço reservado para depoimentos de clientes. Você pode adicionar diretamente no código HTML depois.</p>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <form action="mailto:Jenniferdev@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Jennifer Brito - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
